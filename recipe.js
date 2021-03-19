@@ -40,7 +40,7 @@ function generateHTML(results){
               }</p>
               <p class="item-data">Health-labels!!: ${result.recipe.healthLabels}</p>
               <p class="item-data">Dish-Type: ${result.recipe.dishType}</p>
-              <p class="item-data">Ingredients: ${result.recipe.ingredientLines}</p>
+              <p class="item-data">Ingredientsssss: ${result.recipe.ingredientLines}</p>
             </div>
         </div>
          `;
