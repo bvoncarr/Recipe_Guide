@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Recipe's</title>
+    <title>Recipe Finder</title>
     
 </head>
 <body> 
     <section>
         <div class="joke"></div>
         <div class="container initial">
-          <h1 class="brand">Recipe Finder!!!!!!!!!</h1>
-          <form>
-            <input type="text" placeholder="Search Your Recipe">
+          <h1 class="brand">Recipe Finder!</h1>
+          <form action="recipeFinder" id="search">
+            <input id="searchBox" type="text" placeholder="Search Your Recipe">
             <ion-icon name="search"></ion-icon>
           </form>
+
+          
+          
           <div class="search-result">
             <!-- <div class="item">
                 <img src="./img-1.jpg" alt="">
@@ -30,8 +35,19 @@
           </div>
         </div>
       </section>
+
+    
+
+      <footer id="footer">
+        <p>This drink would be great paired with your meal!</p>
+        <section id="drink-section"></section>
+        <div id="ingredientContainer"></div>
+      </footer>
+
+    
+
     <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
-    <script src="main.js"></script>
+    <script src="recipe.js"></script>
 </body>
 </html>
