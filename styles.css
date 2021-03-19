@@ -15,6 +15,10 @@ body {
 
 h1 {
     text-align: center;
+
+    border-bottom: auto;
+    border-top: palegreen;
+}
     font-family: 'Courgette', cursive;
     font-size: 50px;
 }
@@ -58,5 +62,6 @@ form {
 p {
   font-size: 18px;;
 }
+
 
 

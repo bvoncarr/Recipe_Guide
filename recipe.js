@@ -49,6 +49,7 @@ function generateHTML(results){
     searchResultDiv.innerHTML = generatedHTML;
 }
 
+
 //Beverly's code below
 
 function randomDrink() {
@@ -175,7 +176,6 @@ function displayRandomDrink(drink) {
             if(drink.drinks[0][`strIngredient${6}`] == null)
             ingredient6.innerHTML = "";
 }
-
 
 
 
