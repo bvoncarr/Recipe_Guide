@@ -1,4 +1,10 @@
-* {
-    background-color: yellowgreen;
-    color: whitesmoke;
+input {
+    text-align: center;
+}
+
+input:focus{
+    text-align: center
+}
+form{
+    text-align: center;
 }
