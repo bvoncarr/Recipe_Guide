@@ -1,10 +1,62 @@
-input {
-    text-align: center;
+
+* {
+    background-color: yellowgreen;
+   
+    color: whitesmoke;
 }
 
-input:focus{
-    text-align: center
+body {
+   background-image: linear-gradient(to bottom right, yellowgreen, yellow);
+    color: whitesmoke;
+    font-family: 'Raleway', sans-serif;
+    
+    
 }
-form{
+
+h1 {
     text-align: center;
+    font-family: 'Courgette', cursive;
+    font-size: 50px;
 }
+
+footer {
+    position: fixed;
+    margin-left: 15px;
+  left: 0px;
+  bottom: 0;
+  width: 100%;
+  height: 40%;
+  color: white;
+  text-align: center;
+  border-top: 2px solid white;
+  font-size: 25px;
+}
+
+.search-result {
+  box-sizing: border-box;
+  width: 400px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  row-gap: 25px;
+  column-gap: 200px;
+  justify-content: center;
+}
+
+form {
+   text-align: center; 
+   padding-bottom: 25px;
+}
+
+#drink-section img {
+  width: 10%;
+  height: auto;
+}
+
+p {
+  font-size: 18px;;
+}
+
+
