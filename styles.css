@@ -7,4 +7,6 @@ input:focus{
 }
 form{
     text-align: center;
+    border-bottom: auto;
+    border-top: palegreen;
 }
