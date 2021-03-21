@@ -54,8 +54,6 @@ function generateHTML(results){
 //beverly's code below:
 
 
-// const ingredientContainer = document.querySelector('#ingredientContainer')
-
 function randomCocktail() {
     fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
   .then(
@@ -113,6 +111,21 @@ function displayRandomCocktail(cocktail) {
         ingredient.innerHTML = cocktail.drinks[0][`strMeasure${i}`] + " " + cocktail.drinks[0][`strIngredient${i}`];
     
         drinkSection.appendChild(ingredient);
+
     }
       
     }
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
