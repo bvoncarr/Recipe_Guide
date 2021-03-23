@@ -16,7 +16,7 @@ searchForm.addEventListener("submit", (e) => {
 });
 
 async function fetchAPI() {
-    const baseURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${appID}&app_key=${apiKey}&from=0&to=3`;
+    const baseURL = `https://api.edamam.com/search?q=${searchQuery}&app_id=${appID}&app_key=${apiKey}&from=0&to=15`;
     const response = await fetch(baseURL);
     const data = await response.json();
     generateHTML(data.hits);
@@ -51,7 +51,7 @@ function generateHTML(results){
 }
 
 
-//beverly's code below:
+//beverly's fetch code below:
 
 
 function randomCocktail() {
@@ -116,16 +116,21 @@ function displayRandomCocktail(cocktail) {
       
     }
 
+    //code for swiper:
 
-          
-
-
-
-
-
-
-
-
-
-
-
+var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
