@@ -111,6 +111,7 @@ function displayRandomCocktail(cocktail) {
         ingredient.innerHTML = cocktail.drinks[0][`strMeasure${i}`] + " " + cocktail.drinks[0][`strIngredient${i}`];
     
         drinkSection.appendChild(ingredient);
+
     }
       
     }
