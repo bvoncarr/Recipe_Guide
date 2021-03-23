@@ -1,10 +1,11 @@
-    html,
-        body {
+html,body {
         position: relative;
-        height: 100vh;
+        height: 100%;
+        
+        
         }
 
-        body {
+body {
         background: #eee;
         font-family: 'Raleway', sans-serif;
         font-size: 14px;
@@ -12,38 +13,51 @@
         margin: 0;
         padding: 0;
         min-height: 100%;
-        }
+}
 
-        .swiper-container {
-        width: 100%;
-        height: 100%;
+.swiper-container {
+      width: 200px;
+      height: 300px;
+      /* padding: 50px; */
+}
 
-        }
+.swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff; 
 
-        .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-    }
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+}
     
-    .search-result {
+#welcome {
+        font-family: 'Courgette', cursive;
+        color: black;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 35px;
+}
+
+.brand {
+        font-family: 'Raleway', sans-serif;
+        font-size: 25px;
+}
+
+.search-result {
     box-sizing: border-box;
     width: 400px;
-    height: 200px;
+    height: 1000px;
     margin-left: auto;
     margin-right: auto;
     display: grid;
@@ -51,96 +65,134 @@
     row-gap: 25px;
     column-gap: 200px;
     justify-content: center;
-    }
+    align-items: center;
+}
 
-    form {
+
+.col-sm-8 {
+    overflow: scroll;
+}
+
+
+form {
+    margin-top: 15px;
     text-align: center; 
     padding-bottom: 25px;
-    }
+}
 
 
-        /* Remove the navbar's default margin-bottom and rounded borders */
-        .navbar {
-            margin-bottom: 0;
-            border-radius: 0;
-            background-color: #E7D2CC;
-            border: 2px solid gray;
-            
-        }
 
-        /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-        .row.content {
-            height: 100vh;
-        }
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+    margin-bottom: 0;
+    padding: 0;
+    border-radius: 0;
+    background-color: #E7D2CC;
+    border: 2px solid gray;    
+}
 
-        /* Set  background color and 100% height */
+ /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+         height: 100vh;
+}
+
+ /* Set  background color and 100% height */
+.sidenav {
+        padding-top: 20px;
+        background-color: #E7D2CC;
+        height: 100%;
+}
+
+/* css for links */
+a:visited {
+        color: black;
+}
+
+       
+a:hover {
+        color:#B9B7BD;
+}
+
+        
+a:active {
+        color:black;
+}
+
+
+#random-drink {
+        border-radius: 15px;
+        margin-bottom: 15px;
+}
+
+   
+
+p {
+        margin-bottom: 10px;
+}
+
+/* heading css */   
+h1 {
+         font-family: 'Courgette', cursive;
+        color: black;
+        text-align: center;
+}
+
+h3 {
+        color: black;
+}
+
+/* CSS for center grid below*/
+
+h4 {
+        text-align: center;
+}
+
+.title {
+        text-align: left;
+}
+
+li {
+        font-size: 25px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+}
+
+ul {
+    display: table;
+    margin: 0 auto;
+}
+    
+
+/* responsive image for drink api*/
+
+img {
+        width: 100%;
+        height: auto;
+}
+
+#meme {
+        width: 100px;
+        height: auto;
+}
+
+/* css for footer */
+footer {
+    /* height: 500px; */
+    background-color: #E7D2CC;
+    color: white;
+    padding: 15px;
+    border-top: 2px solid gray;
+    text-align: center;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+     @media screen and (max-width: 767px) {
         .sidenav {
-            padding-top: 20px;
-            background-color: #E7D2CC;
-            height: 100%;
-        }
-
-        /* visited link */
-        a:visited {
-        color: gray;
-        }
-
-        /* mouse over link */
-        a:hover {
-        color:#B9B7BD;
-        }
-
-        /* selected link */
-        a:active {
-        color:#B9B7BD;
-        }
-
-        h1 {
-            font-family: 'Courgette', cursive;
-            color: black;
-            text-align: center;
-        }
-
-        h3 {
-            color: black;
-        }
-/* CSS for Recipes below*/
-        h4 {
-            text-align: center;
-        }
-
-        img {
-            height: 150px;
-            width: 150px;
-        }
-
-        .title {
-            text-align: left;
-        }
-
-       .item-data {
-           overflow: auto;
-       }
-
-/* CSS for Recipes above*/
-
-        footer {
-            /* height: 500px; */
-            background-color: #E7D2CC;
-            color: white;
+            height: auto;
             padding: 15px;
-            border-top: 2px solid gray;
-            text-align: center;
         }
 
-        /* On small screens, set height to 'auto' for sidenav and grid */
-        @media screen and (max-width: 767px) {
-            .sidenav {
-                height: auto;
-                padding: 15px;
-            }
-
-            .row.content {
-                height: auto;
-            }
+        .row.content {
+            height: auto;
         }
+    }
