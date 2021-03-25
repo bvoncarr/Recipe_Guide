@@ -56,14 +56,14 @@ body {
 
 .search-result {
     box-sizing: border-box;
-    width: 400px;
-    height: 1000px;
+    width: 200px;
+    height: 800px;
     margin-left: auto;
     margin-right: auto;
     display: grid;
     grid-template-columns: repeat(3, 200px);
-    row-gap: 25px;
-    column-gap: 200px;
+    row-gap: 15px;
+    column-gap: 100px;
     justify-content: center;
     align-items: center;
 }
@@ -71,6 +71,13 @@ body {
 
 .col-sm-8 {
     overflow: scroll;
+}
+
+#backgroundPic{
+        height: 60%;
+        width: auto;
+        opacity: .3;
+       
 }
 
 
@@ -90,6 +97,52 @@ form {
     background-color: #E7D2CC;
     border: 2px solid gray;    
 }
+
+
+.dropbtn {
+  margin-top: 20px;      
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+  width: 150px;
+  /* padding: 10px; */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: gray;}
+
 
  /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {
@@ -143,6 +196,11 @@ h3 {
 
 /* CSS for center grid below*/
 
+section {
+        width: 100%;
+        height: auto;
+}
+
 h4 {
         text-align: center;
 }
@@ -171,18 +229,13 @@ img {
 }
 
 #meme {
-        width: 100px;
+        width: 100%;
         height: auto;
 }
 
 /* css for footer */
-footer {
-    /* height: 500px; */
-    background-color: #E7D2CC;
-    color: white;
-    padding: 15px;
-    border-top: 2px solid gray;
-    text-align: center;
+footer {   
+    text-align: center;    
 }
 
 /* On small screens, set height to 'auto' for sidenav and grid */
@@ -205,3 +258,14 @@ footer {
             }
         }
      }
+
+     @media only screen and (max-width: 768px) {
+  .search-result {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    grid-row-gap: 100px;
+  }
+}
+
+ 

@@ -3,7 +3,7 @@
 
 <head>
 
-  <title>Recipe Finderrrrrr</title>
+  <title>Recipe Finder</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -29,22 +29,23 @@
 
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
+          <li class="active"><a href="index.html" style="font-weight: bold;">Home</a></li>
+          <div class="dropdown right" >
+          <button class="dropbtn">Music Links</button>
+          <div class="dropdown-content">
+            <a href="https://www.pandora.com/account/sign-in">Pandora</a>
+            <a href="https://www.spotify.com/us/">Spotify</a>
+            <a href="https://www.youtube.com/">YouTube</a>
+          </div>
+        </div>
           <!-- <li><a href="#">Drink Search</a></li> -->
-          <li><a href="links.html" style="color: white;">Links</a></li> 
+          <li><a href="links.html" style="color: white; font-weight: bold;">Links</a></li> 
           <li><a href="#" id="welcome" style="color: black">Welcome to Recipe Finder 🍽️</a></li>
-          <li><iframe id="audio-music"
-            frameborder="100"
-            width="200"
-            height="50"
-            src="https://drive.google.com/file/d/17xYR6Hw43v3v7e4wvKQ8pXx11aW7L_SL/preview?usp=sharing/rel=0&autoplay=1" allow="autoplay">
-          </iframe>
-
-          </li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
-        </ul>
+        <!-- <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span ></span> MUSIC</a></li>
+        </ul> -->
+        
       </div>
     </div>
   </nav>
@@ -57,41 +58,32 @@
         <h4>Looking for a drink to accompany your meal?</h4>
         <br>
 
-        <button id="random-drink">Click Here for Options</button>
+        <button type="button" id="random-drink">Click Here for Options</button>
       
         <section id="drink-section" section>
+          
       </div>
       
       <div class="col-sm-8 text-left">
 
-          <div>
-          <h1 class="brand">What are you hungry for?</h1>
-          </div> 
+              <div>
+                <h1 class="brand">What are you hungry for?</h1>
+              </div> 
 
         <section>
-          
-          <div class="container initial">
+                <form class="sButton">
+                    <input type="text" id="searchBar" placeholder="Search Your Recipe">
+                  <!-- <button class="btn post-btn">Search<i class="fas fa-arrow-right"></i></button> -->
+                </form>
+      <div class="container initial">
 
-            <form class="sButton" action="action_page.php">
-              <input type="text" id="searchBar" placeholder="Search Your Recipe">
-              <!-- <button class="btn post-btn">Search<i class="fas fa-arrow-right"></i></button> -->
-            </form>
-            
-            <br>
-
-            <div class="search-result">
-              <!-- <div class="item">
-                      <img src="./img-1.jpg" alt="">
-                      <div class="flex-container">
-                      <h1 class="title">This is a recipe item</h1>
-                      <a class="view-btn" href="#">View Recipe</a>
-                      </div>
-                      <p class="item-data">Calories: 120</p>
-                    </div> -->          
-            </div>
-          </div>
+          <div class="search-result">
+              <img id="backgroundPic" src="images/pexels-fauxels-3184191.jpg" alt="">
+      </div>
+    </div>
         </section>
       </div>
+      
 
       <div class="col-sm-2 sidenav">
 
@@ -99,7 +91,7 @@
           <h4>Enjoy Some Gordon Ramsey Memes</h4>
         </div>
 
-        <div class="well">
+        <!-- <div class="well"> -->
 
           <!-- Swiper -->
           <div class="swiper-container">
@@ -115,23 +107,7 @@
             <!-- Add Arrows -->
             <!-- <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div> -->
-          </div>
-
-
-
-        
-
-        <!-- <div class="well">
-          <img id="meme" src="images/raw-fish.jpeg" alt=""> 
-        </div> -->
-
-        <!-- <div class="well">
-          <img id="meme" src="images/idiot-sandwich.jpeg" alt=""> 
-        </div> -->
-
-        <!-- <div class="well">
-          <img id="meme" src="images/crab.jpeg" alt=""> 
-        </div> -->
+          <!-- </div> -->
       </div>
     </div>
   </div>
