@@ -1,8 +1,8 @@
 html,body {
         position: relative;
         height: 100%;
-        
-        
+        cursor: url('https://fonts.gstatic.com/s/i/materialicons/restaurant/v11/24px.svg'), auto;
+
         }
 
 body {
@@ -13,6 +13,7 @@ body {
         margin: 0;
         padding: 0;
         min-height: 100%;
+        
 }
 
 
