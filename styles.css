@@ -15,31 +15,22 @@ body {
         min-height: 100%;
 }
 
-.swiper-container {
-      width: 200px;
-      height: 300px;
-      /* padding: 50px; */
+
+p {
+        margin-bottom: 10px;
 }
 
-.swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff; 
-
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
+/* heading css */   
+h1 {
+         font-family: 'Courgette', cursive;
+        color: black;
+        text-align: center;
 }
+
+h3 {
+        color: black;
+}
+
     
 #welcome {
         font-family: 'Courgette', cursive;
@@ -49,9 +40,11 @@ body {
         font-size: 35px;
 }
 
-.brand {
+
+.intro {
         font-family: 'Raleway', sans-serif;
-        font-size: 25px;
+        font-size: 35px;
+        font-weight: bold;
 }
 
 .search-result {
@@ -68,6 +61,11 @@ body {
     align-items: center;
 }
 
+.item {
+   border-radius: 10px;
+    background-color: #E7D2CC;
+    padding: 15px;
+}
 
 .col-sm-8 {
     overflow: scroll;
@@ -89,7 +87,8 @@ form {
 
 
 
-/* Remove the navbar's default margin-bottom and rounded borders */
+/* navbar */
+
 .navbar {
     margin-bottom: 0;
     padding: 0;
@@ -144,9 +143,33 @@ form {
 .dropdown:hover .dropbtn {background-color: gray;}
 
 
- /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+
 .row.content {
          height: 100vh;
+}
+
+.swiper-container {
+      width: 200px;
+      height: 300px;
+      /* padding: 50px; */
+}
+
+.swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff; 
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
 }
 
  /* Set  background color and 100% height */
@@ -179,21 +202,6 @@ a:active {
 
    
 
-p {
-        margin-bottom: 10px;
-}
-
-/* heading css */   
-h1 {
-         font-family: 'Courgette', cursive;
-        color: black;
-        text-align: center;
-}
-
-h3 {
-        color: black;
-}
-
 /* CSS for center grid below*/
 
 section {
@@ -207,6 +215,7 @@ h4 {
 
 .title {
         text-align: left;
+        font-size: 18px;
 }
 
 li {
@@ -218,6 +227,7 @@ li {
 ul {
     display: table;
     margin: 0 auto;
+    list-style:none
 }
     
 
@@ -246,7 +256,7 @@ footer {
         }
 
 
-        /* On small screens, set height to 'auto' for sidenav and grid */
+  /* On small screens, set height to 'auto' for sidenav and grid */
         @media screen and (max-width: 767px) {
             .sidenav {
                 height: auto;
@@ -259,6 +269,10 @@ footer {
         }
      }
 
+
+
+
+
      @media only screen and (max-width: 768px) {
   .search-result {
     display: grid;
@@ -267,5 +281,7 @@ footer {
     grid-row-gap: 100px;
   }
 }
+
+ 
 
  

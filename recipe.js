@@ -36,7 +36,7 @@ function generateHTML(results){
             </div>
               <p class="item-data">Calories: ${result.recipe.calories.toFixed(0)}</p>
 
-              <p class="item-data">Ingredients: ${result.recipe.ingredientLines}</p>
+              <p class="item-data">Cuisine Type: ${result.recipe.cuisineType}</p>
             </div>
         </div>
          `;
